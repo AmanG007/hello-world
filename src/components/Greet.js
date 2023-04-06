@@ -1,6 +1,15 @@
 import React from "react";
 
-const Greet = () => <h1>Hare Krishna</h1>
+const Greet = (props) => {
+    console.log(props)
+    return (
+        <div>
+         <h1>Hare Krishna {props.name} a.k.a. {props.heroName}</h1>
+         {/* {props.children} */}
+        </div>
+    ) 
+
+}
 
 
 export default Greet
